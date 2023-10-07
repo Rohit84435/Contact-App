@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../common/CSS/bootstrap.min.css">
+    <script src="../common/JS/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="CSS/contact.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mb-3 mt-3">
+            <div class="col-md-12 text-center">
+                <h1 id="welcome"></h1>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-4">
+                 <h1>Create Contact</h1>
+                 <div class="accordion mb-3">
+                    <div class="accordion-item">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-create">Create new contact</button>
+                        </h5>
+                        <div class="accordion-collapse collapse" id = "collapse-create">
+                            <div class="accordion-body">
+                               <form >
+                                <input type="text" placeholder="Name" class="form-control name mb-3">
+                                <input type="text" placeholder="Contact" class="form-control number mb-3">
+                                <div class="btn-box" align="right">
+                                    <button type="button" class="btn create-btn" >Create</button>
+                                    <button type="button" class="btn update-btn btn-danger d-none" >Update</button>
+                                </div>
+                               </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 contact-list">
+                <div class="text-center mt-3 mb-3">
+                    <i class="fa-regular fa-circle-user"></i>
+                </div>
+                <form>
+                    <div class="input-group mb-3">
+                        <input type="text" placeholder="Search" oninput="mysearch()" id="search" class="form-control">
+                        <span class="input-group-text">
+                            <i class="fa-solid fa-right-from-bracket" id="logout-btn" style="font-size: 25px; cursor: pointer; "></i>
+                        </span>
+                    </div>
+                </form>
+                <h2>Contact Details</h2>
+                <div class="contact-details">
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2>Restore Deleted Contacts</h2>
+                <div class="accordion mb-3">
+                    <div class="accordion-item">
+                        <h5 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-restore">Rohit kumar</button>
+                        </h5>
+                        <div class="accordion-collapse collapse" id = "collapse-restore">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5>Rohit kumar</h5>
+                                        <p>8789152140</p>
+                                    </div>
+                                    <div class="col-md-6 d-flex justify-content-around align-items-center position-relative">
+                                        <i class="fa-regular fa-message" style="font-size: 25px;"></i>
+                                        <i class="fa-solid fa-square-phone" style="font-size: 25px;"></i>
+                                        <i class="fa-solid fa-ellipsis-vertical" style="font-size: 25px;"></i>
+                                        <div class="option-box" >
+                                            <i class="fa-regular fa-pen-to-square mb-2"style="font-size: 20px;"></i>
+                                            <i class="fa-solid fa-trash"style="font-size: 20px;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+*{
+   margin: 0%;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.illegal{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: black;
+   color: #fff;
+   min-height: 100vh;
+}
+
+.illigal h1{
+   font-size: 65px;
+
+}
+
+.contact-list{
+   background-color: #59CAD2;
+   border-radius: 20px;
+   height: 80vh;
+   overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+   size: 3px;
+}
+
+
+.contact-list div i{
+   font-size: 65px;
+}
+
+.accordion .accordion-item button{
+   box-shadow: none !important;
+   border: none !important;
+   font-size: 20px;
+   color: inherit !important;
+   
+}
+
+.accordion i{
+   font-size: 22px;
+   cursor: pointer;
+}
+
+.option-box{
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   right: -2px;
+   /* opacity: 0; */
+}
+
+.create-btn{
+   background-color: #59CAD2;
+}
+/* .create-btn button:hover{
+  background-color: black;
+  color: #fff;
+} */
