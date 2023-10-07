@@ -172,15 +172,15 @@ function newContactApp(task){
 
 function updateLocalStorage(name , number , id){
     
-    if(name != "" && number != ""){
-        array_list[id] = {
-            co_name : name,
-            co_number : number
-        }
-    }
+  //  if(name != "" && number != ""){
+  //       array_list[id] = {
+  //           co_name : name,
+  //           co_number : number
+  //       }
+  //   }
 
-  else{
-        console.log("heey");
+  // else{
+        // console.log("heey");
         var i;
         array_list = [];
         var accordion_el = contact_details.querySelectorAll(".accordion");
@@ -193,7 +193,7 @@ function updateLocalStorage(name , number , id){
                 co_number : p[0].innerHTML
             });
         }
-  }
+  // }
 
     localStorage.setItem(username+"_list",JSON.stringify(array_list));
 }
